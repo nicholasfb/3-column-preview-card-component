@@ -46,10 +46,12 @@ body {
 }
 
 .car__description {
+    max-width: 220px;
+    max-height: 184px;
     font-family: var(--ff-lexend-deca);
     font-size: 1rem;
     color: var(--clr-transparent-white);
-
+    margin-bottom: 1.75rem;
     line-height: 1.5rem;
 }
 
@@ -64,9 +66,18 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 1440px) {
-    .container {
-        padding-left: 12%;
-        padding-right: 12%;
+@media screen and (min-width: 1024px) {
+    .car__description {
+        padding-bottom: 4rem;
     }
 }
+
+
+@media screen and (min-width: 1440px) {
+    .car__description {
+        margin-bottom: 4rem;
+    }
+}
+
+
+
